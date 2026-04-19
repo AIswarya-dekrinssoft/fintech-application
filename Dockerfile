@@ -1,7 +1,7 @@
-FROM amazonlinux:latest
-RUN yum install httpd -y
-COPY index.html /var/www/html/
-EXPOSE 80
+FROM tomcat:9.0
 
-WORKDIR /opt
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+COPY target/fintechapp.war /usr/local/tomcat/webapps/ROOT.war
+
+CMD ["catalina.sh", "run"]
