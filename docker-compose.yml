@@ -8,11 +8,20 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - app
+      - app1
+      - app2
 
-  app:
+  app1:
     build: ./app
-    container_name: tomcat-app
+    container_name: tomcat-app1
+    expose:
+      - "8080"
+    depends_on:
+      - db
+
+  app2:
+    build: ./app
+    container_name: tomcat-app2
     expose:
       - "8080"
     depends_on:
