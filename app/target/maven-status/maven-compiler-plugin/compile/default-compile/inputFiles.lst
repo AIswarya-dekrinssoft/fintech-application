@@ -1,1 +1,7 @@
+/opt/fintechapp/app/src/main/java/com/fintech/servlet/ViewProductsServlet.java
 /opt/fintechapp/app/src/main/java/com/fintech/DBServlet.java
+/opt/fintechapp/app/src/main/java/com/fintech/servlet/LoginServlet.java
+/opt/fintechapp/app/src/main/java/com/fintech/model/Product.java
+/opt/fintechapp/app/src/main/java/com/fintech/DBUtil.java
+/opt/fintechapp/app/src/main/java/com/fintech/dao/ProductDAO.java
+/opt/fintechapp/app/src/main/java/com/fintech/servlet/AddProductServlet.java
