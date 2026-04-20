@@ -14,6 +14,8 @@ services:
   app1:
     build: ./app
     container_name: tomcat-app1
+    environment:
+      - JVM_ROUTE=1
     expose:
       - "8080"
     depends_on:
@@ -22,6 +24,8 @@ services:
   app2:
     build: ./app
     container_name: tomcat-app2
+    environment:
+      - JVM_ROUTE=2
     expose:
       - "8080"
     depends_on:
